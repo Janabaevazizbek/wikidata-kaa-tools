@@ -74,7 +74,7 @@
         <div style="margin-bottom: 5px;">
             <label style="font-weight: bold; margin-right: 15px; font-size: 18px; color: #333;">Aymaqtı saylań:</label>
             <select id="ilce-sec">
-                <option value=""> -- Rayondı saylań -- </option>
+                <option value=""> Rayondı saylań </option>
                 <option value="Q2603639">Ámiwdárya rayonı</option>
                 <option value="Q2603530">Beruniy rayonı</option>
                 <option value="Q12820397">Bozataw rayonı</option>
@@ -100,7 +100,7 @@
             <a href="https://kaa.wikipedia.org/" target="_blank">Qaraqalpaqsha Wikipedia</a>, 
             <a href="https://www.wikidata.org/" target="_blank">Wikidata</a> hám 
             <a href="https://www.google.com/maps/search/?api=1&query=$" target="_blank">Google Maps</a> 
-            xızmetleri tiykarında islengen. Eger kartada qanday da bir qátelik kórseńiz, sol orınnıń 'Wikidata beti' yamasa 'Wikipedia' túymesi arqalı kirip, maǵlıwmatlardı ózińiz dúzetseńiz boladı.
+            xızmetleri tiykarında islengen. Eger kartada qanday da bir qátelik kórseńiz, sol orınnıń «Wikidata beti» yamasa «Wikipedia» túymesi arqalı kirip, maǵlıwmatlardı ózińiz dúzetseńiz boladı.
         </p>
     </div>
 
@@ -142,7 +142,7 @@
         var startTime = performance.now();
         markers.clearLayers();
 
-        // SPARQL Sorawı: Wikipedia maqalasın da birge keledi
+        // SPARQL Sorawı: Wikipedia maqalası da birge keledi
         var sparqlQuery = `SELECT ?item ?itemLabel ?koordinat ?article WHERE { 
             ?item wdt:P131 wd:${ilceId}. 
             ?item wdt:P625 ?koordinat. 
